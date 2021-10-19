@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+    font-family: 'Poppins';
+}
+
+.container {
+    height: 100vh;
+    background: url(../assets/bg.svg) no-repeat center;
+    background-size: cover;
+    padding: 30px 40px 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo-container {
+    background: url(../assets/logo.svg) no-repeat center;
+    background-size: 100%;
+    width: 270px;
+    height: 56px;
+}
+
+header .logar {
+    height: 30px;
+    background: rgba(249, 249, 249, .8);
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 5px;
+    justify-content: center;
+    color: #3E6B9F;
+    font-size: 18px;
+}
+
+header .logar a{
+    text-decoration: none;
+    color: #505050;
+    font-weight: 500;
+}
+
+main {
+    margin: 80px 0 0 40px;
+}
+
+main h1 {
+    font-weight: 500;
+    font-size: 60px;
+    width: 642px;
+    color: #505050;
+}
+
+main h2 {
+    font-weight: 500;
+    font-size: 30px;
+    color: #505050;
+}
+
+main a {
+    display: flex;
+    margin-top: 20px;
+}
+
+main span {
+    height: 44px;
+    background: #1d3f5b;
+    color: white;
+    padding: 0 20px;
+    border-radius: 5px;
+    display: flex;
+    width: 130px;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    text-decoration: none;
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+main span:last-child {
+    width: auto;
+}
+

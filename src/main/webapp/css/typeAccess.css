@@ -1,0 +1,301 @@
+.container {
+    height: 100vh;
+    background: url(../assets/bg.svg) no-repeat center;
+    background-size: cover;
+}
+
+header {
+    display: flex;
+    align-items: flex-end;
+    height: 15%;
+}
+
+header .logo-container {
+    background: url(../assets/logo.svg) no-repeat center;
+    background-size: 100%;
+    width: 270px;
+    height: 56px;
+    margin-left: 100px;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    height: 85%;
+}
+
+main.registration {
+    align-items: flex-start;
+    justify-content: center;
+    padding: 30px 100px;
+}
+
+main .group-access {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 365px;
+    height: 450px;
+    margin-left: 100px;
+    padding: 25px;
+    background: rgba(249, 249, 249, 0.72);
+    border-radius: 5px;
+}
+/* 
+main .group-access.off {
+    display: none;
+} */
+
+.group-access h2 {
+    color: var(--color1);
+    margin-bottom: 20px;
+}
+
+.group-access .container-login .container-data {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.group-access .container-login .container-data:first-child {
+    margin-bottom: 10px;
+}
+
+.group-access .container-login .container-data input {
+    height: 35px;
+    border-radius: 5px;
+    border: 2px solid #A1B2CD;
+    background: transparent;
+    font-size: 14px;
+    outline: none;
+    padding: 0 5px;
+}
+
+.group-access .container-login .container-data input.active {
+    height: 40px;
+    border: 2px solid var(--color1);
+}
+
+.group-access .container-login .container-data label {
+    color: #0c3049;
+    font-weight: 500;
+}
+
+.group-access .container-login .enter-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    height: 40px;
+    margin-top:20px;
+    border-radius: 5px;
+    border: none;
+    background: var(--color2);
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Archivo';
+    cursor: pointer;
+}
+
+.group-access .container-login .enter-button::before {
+    content: '';
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    background: url('../assets/log-in.svg') center no-repeat;
+    background-size: 100%;
+}
+
+.group-access .container-login .enter-button:hover {
+    background: #44e833;
+}
+
+.group-access .signUp .signUp-action {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    height: 40px;
+    background: #fff;
+    border-radius: 5px;
+    border: 2px solid var(--color1);
+    font-family: 'Archivo';
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--color1);
+    cursor: pointer;   
+    text-decoration: none; 
+}
+
+.group-access .signUp .signUp-action::before {
+    content: '';
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    background: url('../assets/users.svg') center no-repeat;
+    background-size: 100%;
+}
+
+.group-access .signUp .signUp-action:hover {
+    background: #fcfcfc;
+}
+
+.group-registration {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 30px 1fr;
+    gap: 20px;
+    width: 100%;
+}
+
+.title-form {
+    display: flex;
+    align-items: center;
+}
+
+.title-form h2 {
+    color: #0C3049;
+    font-weight: 500;
+}
+
+.form-cadastro {
+    display: flex;
+    gap: 30px;
+}
+
+.login-data, .personal-data {
+    border-radius: 5px;
+    background: rgba(249, 249, 249, 0.6);
+}
+
+.login-data {
+    width: 300px;
+}
+
+.personal-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: calc(100% - 330px);
+    padding: 30px;
+}
+
+.container-inputs {
+    width: 100%;
+}
+
+.group-registration .form-cadastro .login-data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 30px 40px;
+}
+
+.group-registration .form-cadastro .login-data .image-profile {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+.group-registration .form-cadastro .login-data .image-profile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.group-registration .form-cadastro .login-data .container-data {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+    color: #0C3049;
+    font-weight: 500;
+}
+
+.group-registration .form-cadastro .login-data .container-data input,
+.group-registration .form-cadastro .personal-data .container-data input,
+.group-registration .form-cadastro .personal-data .container-data select {
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+    padding: 5px;
+}
+
+.group-registration .form-cadastro .personal-data .container-data {
+    display: inline-block;
+    color: #0C3049;
+    font-weight: 500;
+    margin: 0 20px 20px 0;
+}
+
+.group-registration .form-cadastro .personal-data .container-data input,
+.group-registration .form-cadastro .personal-data .container-data select {
+    display: block;
+    margin-top: 5px;
+}
+
+.input-name, .input-email, .input-rua {
+    width: 300px;
+}
+
+.input-cep {
+    width: 150px;
+}
+
+.input-numero {
+    width: 80px;
+}
+
+.input-bairro, .input-cidade {
+    width: 200px;
+}
+
+.input-uf {
+    width: 60px;
+}
+
+.personal-data .button-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 130px;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    background: #ffffff;
+    color: #0c3049;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.personal-data .button-form.submit {
+    background: #0C3049;
+    color: #ffffff;
+}
+
+.container-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.divMostrarSenha {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.divMostrarSenha img {
+    width: 15px;
+}

@@ -1,0 +1,55 @@
+.hotel_avaliacao{
+    color: #e6c000;
+    font-size: small;
+    text-align: center;
+}
+
+.links, h2 {
+    text-decoration: none;
+    color: #0C3049;
+}
+
+.links:hover {
+    color: #5DF04E;
+}
+
+.links-verde {
+    text-decoration: none;
+    color: #30D220;
+}
+
+.links-verde:hover {
+    color: #0C3049;
+}
+
+.hotel {
+    cursor: pointer;
+}
+
+.img-container {
+    display: inline;
+    height: 300px;    
+    margin-bottom: 1rem;
+
+}
+
+.img-blog {
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+    border-radius: 15px;
+    -webkit-filter: brightness(100%);
+}
+
+.img-blog:hover {
+    -webkit-filter: brightness(70%);
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    -ms-transition: all .2s ease;
+    transition: all .2s ease;
+}
+
+.func {
+    list-style-type:none;
+}
